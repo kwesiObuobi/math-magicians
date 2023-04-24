@@ -2,6 +2,15 @@
   border: solid 2px red;
 }
 
+.result {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 1.2rem;
+}
+
 .row {
   display: flex;
 }
@@ -11,17 +20,15 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
-  flex: 1;
   border: solid 0.5px #ddd;
   font-size: 0.8rem;
+  width: 5rem;
 }
 
 .zero {
   flex: 2;
-  border: solid 3px blue;
 }
 
 .yellow {
-  flex: 2;
-  border: solid 3px blue;
+  background-color: rgb(250, 158, 29);
 }
