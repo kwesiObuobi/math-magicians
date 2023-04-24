@@ -11,30 +11,30 @@ const Calculator = () => (
       <Key name="AC" />
       <Key name="+/-" />
       <Key name="%" />
-      <Key name="÷" className="yellow" />
+      <Key name="÷" tag="yellow" />
     </div>
     <div className="row">
       <Key name="7" />
       <Key name="8" />
       <Key name="9" />
-      <Key name="X" className="yellow" />
+      <Key name="X" tag="yellow" />
     </div>
     <div className="row">
       <Key name="4" />
       <Key name="5" />
       <Key name="6" />
-      <Key name="-" className="yellow" />
+      <Key name="-" tag="yellow" />
     </div>
     <div className="row">
       <Key name="1" />
       <Key name="2" />
       <Key name="3" />
-      <Key name="+" className="yellow" />
+      <Key name="+" tag="yellow" />
     </div>
     <div className="row">
-      <Key name="0" className="zero" />
+      <Key name="0" tag="zero" />
       <Key name="." />
-      <Key name="=" className="yellow" />
+      <Key name="=" tag="yellow" />
     </div>
   </div>
 );
