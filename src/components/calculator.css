@@ -1,0 +1,27 @@
+.calculator {
+  border: solid 2px red;
+}
+
+.row {
+  display: flex;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  flex: 1;
+  border: solid 0.5px #ddd;
+  font-size: 0.8rem;
+}
+
+.zero {
+  flex: 2;
+  border: solid 3px blue;
+}
+
+.yellow {
+  flex: 2;
+  border: solid 3px blue;
+}

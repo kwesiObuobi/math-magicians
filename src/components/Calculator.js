@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './calculator.css';
 
 const Calculator = () => (
   <div className="calculator">
@@ -38,10 +39,15 @@ const Calculator = () => (
   </div>
 );
 
-const Key = ({ name }) => <div className="key">{ name }</div>;
+const Key = ({ name, tag }) => <div className={`key ${tag}`}>{ name }</div>;
+
+Key.defaultProps = {
+  tag: '',
+};
 
 Key.propTypes = {
   name: PropTypes.string.isRequired,
+  tag: PropTypes.string,
 };
 
 export default Calculator;
