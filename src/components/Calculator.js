@@ -25,14 +25,14 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="result">
-        <span>0</span>
+        <span>{object.total}</span>
       </div>
 
       {
         calculatorBoard.map((row) => (
           <div key={`line${row[0]}`} className="row">
             {row.map((button) => (
-              <Key key={button} name={button} />
+              <Key key={button} name={button} clickHandle={() => handleClick()} />
             ))}
           </div>
         ))
@@ -71,10 +71,11 @@ const Calculator = () => {
   );
 };
 
-const Key = ({ name }) => <button type="button" className="key">{ name }</button>;
+const Key = ({ name, clickHandle }) => <button onClick={clickHandle} type="button" className="key">{ name }</button>;
 
 Key.propTypes = {
   name: PropTypes.string.isRequired,
+  clickHandle: PropTypes.func.isRequired,
 };
 
 export default Calculator;
