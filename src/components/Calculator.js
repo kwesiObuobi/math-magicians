@@ -27,7 +27,18 @@ const Calculator = () => {
       <div className="result">
         <span>0</span>
       </div>
-      <div className="row">
+
+      {
+        calculatorBoard.map((row) => (
+          <div key={`line${row[0]}`} className="row">
+            {row.map((button) => (
+              <Key key={button} name={button} />
+            ))}
+          </div>
+        ))
+      }
+
+      {/* <div className="row">
         <Key name="AC" />
         <Key name="+/-" />
         <Key name="%" />
@@ -55,20 +66,15 @@ const Calculator = () => {
         <Key name="0" tag="zero" />
         <Key name="." />
         <Key name="=" tag="yellow" />
-      </div>
+      </div> */}
     </div>
   );
 };
 
-const Key = ({ name, tag }) => <button type="button" className={`key ${tag}`}>{ name }</button>;
-
-Key.defaultProps = {
-  tag: '',
-};
+const Key = ({ name }) => <button type="button" className="key">{ name }</button>;
 
 Key.propTypes = {
   name: PropTypes.string.isRequired,
-  tag: PropTypes.string,
 };
 
 export default Calculator;
