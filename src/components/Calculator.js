@@ -25,48 +25,24 @@ const Calculator = () => {
   return (
     <div className="calculator">
       <div className="result">
-        <span>{object.total}</span>
+        <span>
+          {object?.total}
+          {' '}
+          {object?.operation}
+          {' '}
+          {object?.next}
+        </span>
       </div>
 
       {
         calculatorBoard.map((row) => (
           <div key={`line${row[0]}`} className="row">
             {row.map((button) => (
-              <Key key={button} name={button} clickHandle={() => handleClick()} />
+              <Key key={button} name={button} clickHandle={() => handleClick(button)} />
             ))}
           </div>
         ))
       }
-
-      {/* <div className="row">
-        <Key name="AC" />
-        <Key name="+/-" />
-        <Key name="%" />
-        <Key name="÷" tag="yellow" />
-      </div>
-      <div className="row">
-        <Key name="7" />
-        <Key name="8" />
-        <Key name="9" />
-        <Key name="X" tag="yellow" />
-      </div>
-      <div className="row">
-        <Key name="4" />
-        <Key name="5" />
-        <Key name="6" />
-        <Key name="-" tag="yellow" />
-      </div>
-      <div className="row">
-        <Key name="1" />
-        <Key name="2" />
-        <Key name="3" />
-        <Key name="+" tag="yellow" />
-      </div>
-      <div className="row">
-        <Key name="0" tag="zero" />
-        <Key name="." />
-        <Key name="=" tag="yellow" />
-      </div> */}
     </div>
   );
 };
