@@ -25,10 +25,10 @@
   cursor: pointer;
 }
 
-.zero {
-  flex: 2;
+.key:last-child {
+  background-color: rgb(250, 158, 29);
 }
 
-.yellow {
-  background-color: rgb(250, 158, 29);
+.zero {
+  flex: 2;
 }
