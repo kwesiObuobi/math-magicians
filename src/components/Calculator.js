@@ -39,7 +39,7 @@ const Calculator = () => (
   </div>
 );
 
-const Key = ({ name, tag }) => <div className={`key ${tag}`}>{ name }</div>;
+const Key = ({ name, tag }) => <button type="button" className={`key ${tag}`}>{ name }</button>;
 
 Key.defaultProps = {
   tag: '',
