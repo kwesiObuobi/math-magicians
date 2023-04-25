@@ -26,13 +26,9 @@
 }
 
 .key:last-child {
-  /* do something here */
+  background-color: rgb(250, 158, 29);
 }
 
 .zero {
   flex: 2;
-}
-
-.yellow {
-  background-color: rgb(250, 158, 29);
 }
