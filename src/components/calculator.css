@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.key:last-child {
+  /* do something here */
+}
+
 .zero {
   flex: 2;
 }
