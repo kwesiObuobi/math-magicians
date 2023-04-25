@@ -38,7 +38,12 @@ const Calculator = () => {
         calculatorBoard.map((row) => (
           <div key={`line${row[0]}`} className="row">
             {row.map((button) => (
-              <Key key={button} name={button} clickHandle={() => handleClick(button)} />
+              <Key
+                key={button}
+                name={button}
+                clickHandle={() => handleClick(button)}
+                tag={button === '0' ? 'zero' : ''}
+              />
             ))}
           </div>
         ))
@@ -47,11 +52,16 @@ const Calculator = () => {
   );
 };
 
-const Key = ({ name, clickHandle }) => <button onClick={clickHandle} type="button" className="key">{ name }</button>;
+const Key = ({ name, clickHandle, tag }) => <button onClick={clickHandle} type="button" className={`key ${tag}`}>{ name }</button>;
+
+Key.defaultProps = {
+  tag: '',
+};
 
 Key.propTypes = {
   name: PropTypes.string.isRequired,
   clickHandle: PropTypes.func.isRequired,
+  tag: PropTypes.string,
 };
 
 export default Calculator;
