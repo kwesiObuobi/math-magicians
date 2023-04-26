@@ -4,7 +4,7 @@ import './quote.css';
 
 const Quote = () => {
   const [quote, setQuote] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -22,11 +22,11 @@ const Quote = () => {
 
         if (subscribed) {
           setQuote(result[0]);
+          setLoading(false);
         }
       } catch (error) {
         setError(true);
       }
-      setLoading(false);
     };
 
     fetchData();
