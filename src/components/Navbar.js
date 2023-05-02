@@ -5,8 +5,8 @@ const Navbar = () => (
   <nav>
     <h1 className="logo">Math Magicians</h1>
     <NavLink to="/">Home</NavLink>
-    <NavLink to="/">Calculator</NavLink>
-    <NavLink to="/">Quote</NavLink>
+    <NavLink to="/calculator">Calculator</NavLink>
+    <NavLink to="/quote">Quote</NavLink>
   </nav>
 );
 

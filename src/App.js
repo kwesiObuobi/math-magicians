@@ -1,13 +1,15 @@
-import Calculator from './components/Calculator';
+// import Calculator from './components/Calculator';
+import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Quote from './components/quote';
+// import Quote from './components/quote';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Calculator />
-      <Quote />
+      <Outlet />
+      {/* <Calculator />
+      <Quote /> */}
     </div>
   );
 }
