@@ -1,10 +1,13 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-  <div>
-    <p>This is the navbar</p>
-    <p>It has 2 p tags</p>
-  </div>
+  <nav>
+    <h1 className="logo">Math Magicians</h1>
+    <NavLink to="/">Home</NavLink>
+    <NavLink to="/">Calculator</NavLink>
+    <NavLink to="/">Quote</NavLink>
+  </nav>
 );
 
 export default Navbar;
