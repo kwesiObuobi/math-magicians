@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { API_KEY, API_URL } from '../config/api';
-import './quote.css';
+import '../styles/quote.css';
 
 const Quote = () => {
   const [quote, setQuote] = useState('');
@@ -36,9 +36,9 @@ const Quote = () => {
     };
   }, []);
 
-  if (error) return <div>Something went wrong</div>;
+  if (error) return <div className="quote">Something went wrong</div>;
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="quote">Loading...</div>;
 
   return (
     <div className="quote">

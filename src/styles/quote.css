@@ -1,0 +1,14 @@
+.quote {
+  padding: 1rem;
+  width: var(--container-sm);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 378px) {
+  .quote {
+    width: var(--container-lg);
+    font-size: 2rem;
+  }
+}

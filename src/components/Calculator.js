@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './calculator.css';
+import '../styles/calculator.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -23,31 +23,34 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="calculator">
-      <div className="result">
-        <span>
-          {object?.total}
-          {' '}
-          {object?.operation}
-          {' '}
-          {object?.next}
-        </span>
-      </div>
+    <div className="calculator-container">
+      <h1 className="calc-header">{'Let\'s do some math!'}</h1>
+      <div className="calculator">
+        <div className="result">
+          <span>
+            {object?.total}
+            {' '}
+            {object?.operation}
+            {' '}
+            {object?.next}
+          </span>
+        </div>
 
-      {
-        calculatorBoard.map((row) => (
-          <div key={`line${row[0]}`} className="row">
-            {row.map((button) => (
-              <Key
-                key={button}
-                name={button}
-                clickHandle={() => handleClick(button)}
-                tag={button === '0' ? 'zero' : ''}
-              />
-            ))}
-          </div>
-        ))
-      }
+        {
+          calculatorBoard.map((row) => (
+            <div key={`line${row[0]}`} className="row">
+              {row.map((button) => (
+                <Key
+                  key={button}
+                  name={button}
+                  clickHandle={() => handleClick(button)}
+                  tag={button === '0' ? 'zero' : ''}
+                />
+              ))}
+            </div>
+          ))
+        }
+      </div>
     </div>
   );
 };
