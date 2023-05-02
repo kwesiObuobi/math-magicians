@@ -42,7 +42,7 @@
   }
 
   .nav-link {
-    transition: all .2s linear;
+    transition: all 0.2s linear;
   }
 
   .nav-link:hover {
