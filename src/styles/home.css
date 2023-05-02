@@ -1,0 +1,26 @@
+.home-container {
+  width: var(--container-sm);
+  margin: 0 auto;
+}
+
+.home-header {
+  font-size: 1.5rem;
+}
+
+.home-text {
+  line-height: 1.5rem;
+}
+
+.home-text {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 378px) {
+  .home-container {
+    width: var(--container-lg);
+  }
+
+  .home-header {
+    font-size: 2rem;
+  }
+}
