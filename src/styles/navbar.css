@@ -1,0 +1,42 @@
+.nav-container {
+  width: 100%;
+  background-color: blue;
+}
+
+.navbar {
+  width: var(--container-lg);
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.active {
+  background-color: orange;
+  color: black;
+}
+
+@media screen and (min-width: 378px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
