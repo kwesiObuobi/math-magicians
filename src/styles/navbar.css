@@ -1,6 +1,7 @@
 .nav-container {
   width: 100%;
   background-color: blue;
+  margin-bottom: 2rem;
 }
 
 .navbar {
@@ -38,5 +39,15 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  .nav-link {
+    transition: all .2s linear;
+  }
+
+  .nav-link:hover {
+    color: black;
+    background-color: #d3d3d3;
+    cursor: pointer;
   }
 }
