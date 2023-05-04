@@ -1,6 +1,6 @@
 import calculate from '../logic/calculate';
 
-describe('Test the "Calculate" function', () => {
+describe('Test the "Calculate" function in calculate.js', () => {
   it('returns empty object with null values when "AC" is pressed', () => {
     const obj = {
       total: '4',
