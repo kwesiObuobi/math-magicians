@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Component should correctly render the Calculator component 1`] = `
+<div
+  className="calculator-container"
+>
+  <h1
+    className="calc-header"
+  >
+    Let's do some math!
+  </h1>
+  <div
+    className="calculator"
+  >
+    <div
+      className="result"
+    >
+      <span>
+        0
+         
+         
+      </span>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="row"
+    >
+      <button
+        className="key zero"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="key "
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
