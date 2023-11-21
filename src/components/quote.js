@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 import { API_KEY, API_URL } from '../config/api';
 import '../styles/quote.css';
@@ -7,6 +8,7 @@ const Quote = () => {
   const [quote, setQuote] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     let subscribed = true;
@@ -35,13 +37,14 @@ const Quote = () => {
     // Analytics
     ReactGA.send({
       hitType: 'pageview',
-      page: window.location.pathname,
+      page: location.pathname,
+      title: 'Quote page',
     });
 
     return () => {
       subscribed = false;
     };
-  }, []);
+  }, [location]);
 
   if (error) return <div className="quote">Something went wrong</div>;
 
