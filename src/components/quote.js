@@ -41,6 +41,12 @@ const Quote = () => {
       title: 'Quote page',
     });
 
+    ReactGA.event({
+      category: 'Navigation',
+      action: 'Open Quote Page',
+      label: 'Quote',
+    });
+
     return () => {
       subscribed = false;
     };

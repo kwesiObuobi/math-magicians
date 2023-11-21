@@ -33,6 +33,12 @@ const Calculator = () => {
       page: location.pathname,
       title: 'Calculator page',
     });
+
+    ReactGA.event({
+      category: 'Navigation',
+      action: 'Open Calculator Page',
+      label: 'Calculator',
+    });
   }, [location]);
 
   return (
