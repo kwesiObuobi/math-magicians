@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import { API_KEY, API_URL } from '../config/api';
 import '../styles/quote.css';
 
@@ -30,6 +31,12 @@ const Quote = () => {
     };
 
     fetchData();
+
+    // Analytics
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname,
+    });
 
     return () => {
       subscribed = false;

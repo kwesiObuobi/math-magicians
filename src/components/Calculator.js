@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import PropTypes from 'prop-types';
 import '../styles/calculator.css';
 import calculate from '../logic/calculate';
@@ -21,6 +22,14 @@ const Calculator = () => {
     ['1', '2', '3', '+'],
     ['0', '.', '='],
   ];
+
+  useEffect(() => {
+    // Analytics
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname,
+    });
+  });
 
   return (
     <div className="calculator-container">
