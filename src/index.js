@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +9,12 @@ import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Quote from './components/quote';
+
+ReactGA.initialize('G-EY4G1HZ766');
+ReactGA.send({
+  hitType: 'pageview',
+  page: window.location.pathname,
+});
 
 const router = createBrowserRouter([
   {
